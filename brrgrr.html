@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRRRGRRR - Choose Your Burger</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="burger.png" type="image/png">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo-wrapper">
+        <div class="logo">
+          <img src="burger.png" alt="Burger" />
+          <div class="logo-text">BRRRGRRR</div>
+          <div class="tagline">CHOOSE YOUR BURGER</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="pan">
+        <div class="pan-bar">
+          <div class="pan-handle handle-left">
+            <div class="utensil large"></div>
+          </div>
+          <div class="pan-handle handle-right">
+            <div class="utensil small"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="burger-preview" id="burger-preview">
+        <div class="burger-layer top-bun"></div>
+        <div class="burger-layer bottom-bun"></div>
+      </div>
+
+      <div class="price-board">
+        <div class="wood-frame horizontal top"></div>
+        <div class="wood-frame horizontal bottom"></div>
+        <div class="wood-frame vertical left"></div>
+        <div class="wood-frame vertical right"></div>
+
+        <div class="board-content">
+          <div class="price-title">PRICES</div>
+          <div class="price-item"><span>Whole wheat bun</span><span>20</span></div>
+          <div class="price-item"><span>Patty</span><span>50</span></div>
+          <div class="price-item"><span>Onions</span><span>20</span></div>
+          <div class="price-item"><span>Tomatoes</span><span>20</span></div>
+          <div class="price-item"><span>Lettuce</span><span>20</span></div>
+          <div class="price-item"><span>Cheese slice</span><span>10</span></div>
+        </div>
+      </div>
+
+      <div class="ingredients-list" id="ingredients-list">
+        <h3>Ingredients</h3>
+      </div>
+    </div>
+
+    <div class="customization">
+      <div class="options">
+        <h3>Choose what goes into your burger</h3>
+        <div class="option-buttons">
+          <button class="option-button" data-ingredient="patty">Patty</button>
+          <button class="option-button" data-ingredient="cheese">Cheese</button>
+          <button class="option-button" data-ingredient="tomato">Tomato</button>
+          <button class="option-button" data-ingredient="onion">Onion</button>
+          <button class="option-button" data-ingredient="lettuce">Lettuce</button>
+        </div>
+      </div>
+
+      <div class="checkout">
+        <div>
+          <div class="checkout-title">Current Order Total:</div>
+          <div class="total-price">INR 140</div>
+          <div class="currency">To Pay</div>
+        </div>
+        <button class="checkout-button">Pay and receive order</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
